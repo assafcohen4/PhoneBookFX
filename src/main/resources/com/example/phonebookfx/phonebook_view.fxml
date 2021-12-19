@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.phonebookfx.Controller">
+   <children>
+      <Button fx:id="add_button" layoutX="194.0" layoutY="427.0" mnemonicParsing="false" onAction="#OnPressButton" prefHeight="25.0" prefWidth="158.0" text="Add New Contact" />
+      <Button fx:id="remove_button" layoutX="14.0" layoutY="427.0" mnemonicParsing="false" onAction="#OnPressButton" prefHeight="25.0" prefWidth="158.0" text="Remove Selected Contact" />
+      <Button fx:id="update_button" layoutX="367.0" layoutY="427.0" mnemonicParsing="false" onAction="#OnPressButton" prefHeight="25.0" prefWidth="184.0" text="Update Selected Contact" />
+      <ListView fx:id="contact_list" layoutX="14.0" layoutY="14.0" onMouseClicked="#OnMouseClicked" prefHeight="297.0" prefWidth="549.0" />
+      <TextField fx:id="search_field" layoutX="286.0" layoutY="315.0" onKeyTyped="#OnKeyTyped" onMouseClicked="#OnMouseClicked" prefHeight="25.0" prefWidth="276.0" promptText="Search contact by entering name or number here" />
+      <TextField fx:id="current_name_field" layoutX="316.0" layoutY="372.0" onMouseClicked="#OnMouseClicked" prefHeight="25.0" prefWidth="230.0" />
+      <Label layoutX="194.0" layoutY="376.0" prefHeight="17.0" prefWidth="132.0" text="New/Updated Name" />
+      <Label layoutX="194.0" layoutY="406.0" prefHeight="17.0" prefWidth="116.0" text="New/Edited Number" />
+      <TextField fx:id="current_number_field" layoutX="316.0" layoutY="402.0"  onMouseClicked="#OnMouseClicked" prefHeight="25.0" prefWidth="230.0" />
+      <Label fx:id="contact_added_label" layoutX="194.0" layoutY="455.0" prefHeight="17.0" prefWidth="147.0" />
+      <Label fx:id="contact_updated_label" layoutX="367.0" layoutY="455.0" prefHeight="17.0" prefWidth="158.0" />
+      <Label fx:id="contact_removed_label" layoutX="14.0" layoutY="455.0" prefHeight="17.0" prefWidth="158.0" />
+   </children>
+</Pane>
